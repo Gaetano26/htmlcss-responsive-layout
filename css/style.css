@@ -17,6 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* header + nav*/
 header {
     background-color: var(--secondary-color);
     color: var(--light-color);
@@ -47,7 +48,9 @@ header nav a{
   text-decoration: none;
   list-style: none;
 }
+/*fine header + nav*/
 
+/*body + main*/
 body {
     font-family: 'PT Sans', sans-serif;
     background-color: var(--light-color);
@@ -57,6 +60,7 @@ body {
     margin-top: 80px;
  }
 
+ /*sezione intro*/
 .container {
     padding: 15px;
 }
@@ -65,12 +69,68 @@ body {
     background-color: var(--bg-card);
     border-radius: 20px;
     margin-bottom: 10px;
+    
+}
+
+
+.icon {
+    font-size: 100px;
+    margin: 20px;
+    color: var(--secondary-color);
+}
+
+.card h3 {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin: 20px;
+
+}
+
+.card p {
+   padding: 15px 10px;
 }
 
 .text-center {
     text-align: center;
 }
 
+.mg1 {
+    margin-right: 2px;
+}
+/*Fine sezione intro*/
+
+/*sezione planning*/
+.color2 {
+    background-color: var(--primary-color);
+}
+
+.container img{
+    width: 100%;
+}
+
+.card2 {
+ background-color: var(--light-color);
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}   
+
+.card2 h3 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.card2 p {
+    padding: 18px;
+}
+
+.card2 i {
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    padding:20px;
+}
 
 footer {
     background-color: var(--dark-color);
