@@ -27,6 +27,13 @@ header {
     z-index: 1000;
     height: 80px;
 }
+p {
+    line-height: 1.7rem;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
 
 nav {
     display: flex;
@@ -38,6 +45,21 @@ nav {
 .bar-nav {
     font-size: 30px;
     color: var(--light-color);
+}
+
+.bottone {
+    display: inline-block;
+    padding: 6px 30px;
+    border-radius: 20px;
+    color:var(--light-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    
+}
+
+.bottone a {
+    text-decoration: none;
+    color: white;
 }
 
 header nav ul {
@@ -53,7 +75,7 @@ header nav a{
 /*body + main*/
 body {
     font-family: 'PT Sans', sans-serif;
-    background-color: var(--light-color);
+    
  }   
 
  main {
@@ -62,13 +84,17 @@ body {
 
  /*sezione intro*/
 .container {
-    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    
 }
 
 .card {
     background-color: var(--bg-card);
     border-radius: 20px;
     margin-bottom: 10px;
+    padding: 10px;
     
 }
 
@@ -87,7 +113,7 @@ body {
 }
 
 .card p {
-   padding: 15px 10px;
+   padding: 15px 12px;
 }
 
 .text-center {
@@ -110,7 +136,7 @@ body {
 
 .card2 {
  background-color: var(--light-color);
-    border-radius: 40px;
+    border-radius: 50px;
     margin-top: 30px;
     margin-bottom: 20px;
 
@@ -147,9 +173,9 @@ body {
  }
 
  .box {
-    margin: auto;
-    width: 40vw;
-    height: 40vw;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
  }
@@ -185,13 +211,123 @@ body {
     margin-left: 20px;
     padding-top: 30px;
 }
+.card .bottone{
+    margin: 15px;
+ }
 
 #Features .card p {
     padding-right: 30px;
     padding-left: 20px;
 }
+/*fine sezione feature*/
+/*sezione about us*/
+#about-us h2 {
+    color: var(--primary-color);
+    font-size: 50px;
+    padding: 30px;
+ }
 
- .footer {
+#about-us p {
+    padding: 30px;
+}
+
+#about-us .box {
+   margin-left: 60px;
+   
+}
+
+#about-us .bottone {
+    margin-top: 30px;
+    padding: 10px;
+    
+}
+
+#about-us h3 {
+     font-size: 30px;
+     color: var(--primary-color);
+    
+}
+
+.testo {
+    padding: 20px;
+}
+/*fine sezione about us*/
+/*sezione get-started*/
+#get-started  {
+    background-color: var(--primary-color);
+}
+.free {
+    margin-top: 40px;
+    color: var(--light-color);
+}
+.free h4 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.free h3 {
+    margin: 20px;
+    font-size: 30px;
+}
+.free h2 {
+    font-size: 55px;
+    color: var(--contrast-color);
+}
+
+.free p {
+    margin: 25px;
+}
+
+.free .bottone {
+    background-color: var(--light-color);
+    padding: 20px 100px;
+    border-radius: 30px;
+    
+}
+
+.free .bottone a {
+    color:var(--primary-color);
+    font-weight: 700;
+}
+
+/*footer*/
+footer  {
     background-color: var(--dark-color);
 }
 
+.info {
+    margin-top: 60px;
+    
+}
+
+.info a {
+    color: var(--primary-color);
+}
+
+.info p {
+    font-size: 15px;
+    margin: 16px;
+    color: var(--light-color);
+}
+/*fine footer*/
+
+@media screen and (min-width: 768px) {
+      .container {
+        max-width: 750px;
+    }
+      .d-flex {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+      }
+      #intro .card {
+        width: calc((100% / 3) - 10px) ;
+      }
+      #intro .card:first-child {
+        width: calc((100% / 3 * 2) - 10px) ;
+      }
+      .phone img {
+          width: 50%;
+          margin-bottom: -15px;
+      }
+}
