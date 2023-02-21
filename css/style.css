@@ -173,7 +173,7 @@ body {
  }
 
  .box {
-    margin: 0 auto;
+    margin: auto;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -329,5 +329,9 @@ footer  {
       .phone img {
           width: 50%;
           margin-bottom: -15px;
+      }
+      .card2 {
+        display: flex;
+        flex-flow: row wrap;
       }
 }
